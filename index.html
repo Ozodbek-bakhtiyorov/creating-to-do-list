@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg bg-dark text-white">
+    <div class="mt-4 w-50 mx-auto">
+        <h1 class="display-4 text-center"><i class="fa fa-book text-primary"></i>Y.S <span class="text-info">Book</span></h1>
+        <form action="#" id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Autor</label>
+                <input type="text" class="form-control" id="author">
+            </div>
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" class="form-control" id="year">
+            </div>
+            <input type="submit" value="Add book" class="btn btn-info btn-block">
+
+        </form>
+        <table class="table table-striped mt-5 text-center table-hover text-white">
+            <thead>
+                <tr>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        Year
+                    </th>
+                    <tbody id="book-list"></tbody>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
